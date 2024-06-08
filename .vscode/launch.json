@@ -1,0 +1,45 @@
+{
+    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
+    // 기존 특성에 대한 설명을 보려면 가리킵니다.
+    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python 디버거: 현재 파일",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Python: Week3_Day_train_my",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}Week3${pathSeparator}WeekDay${pathSeparator}train_my.py",
+            
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}${pathSeparator}Week3${pathSeparator}WeekDay",
+            "env": {"CUDA_VISIBLE_DEVICES":"0"}, // GPU 개수 안으로
+            "args": [
+            "--arg1", "arg1_value",
+            "--arg2", "arg2_value",
+            ]
+            },
+        {
+            "name": "Python: Week4_Day_train",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}${pathSeparator}Week4${pathSeparator}WeekDay${pathSeparator}train.py",
+            
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "cwd": "${workspaceFolder}${pathSeparator}Week4${pathSeparator}WeekDay",
+            "env": {"CUDA_VISIBLE_DEVICES":"0"}, // GPU 개수 안으로
+            "args": [
+            "--arg1", "arg1_value",
+            "--arg2", "arg2_value",
+            ]
+            },
+    ]
+}
